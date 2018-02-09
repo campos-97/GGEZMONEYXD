@@ -60,8 +60,8 @@
       <file leaf-file-name="txtAlgorithms.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithms/files/txt/txtAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="408">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,6 +200,14 @@
               <item name="GGEZMONEYXD" type="b2602c69:ProjectViewProjectNode" />
               <item name="GGEZMONEYXD" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="txt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGEZMONEYXD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GGEZMONEYXD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,12 +310,12 @@
       <workItem from="1518050777867" duration="69000" />
       <workItem from="1518115536038" duration="7303000" />
       <workItem from="1518140293489" duration="127000" />
-      <workItem from="1518140464140" duration="1943000" />
+      <workItem from="1518140464140" duration="2088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14477000" />
+    <option name="totallyTimeSpent" value="14622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -597,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/files/txt/txtAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

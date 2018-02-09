@@ -10,7 +10,7 @@ public class txtAlgorithms {
     public static void saveTxt(String txtPath, String text){
         PrintWriter writer = null;
         try {
-            writer = new PrintWriter("the-file-name.txt", "UTF-8");
+            writer = new PrintWriter(txtPath, "UTF-8");
             writer.print(text);
             writer.close();
         } catch (FileNotFoundException e) {
