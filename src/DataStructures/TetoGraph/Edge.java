@@ -1,12 +1,16 @@
 package DataStructures.TetoGraph;
 
-public class Edge<T> {
-
-
+public class Edge<T, K extends Comparable> {
 
     boolean direction;
-    Vertex<T> startVertex;
-    Vertex<T> endVertex;
+    K weight;
+    Vertex<T, K> startVertex;
+    Vertex<T, K> endVertex;
+
+    Edge(boolean direction, Vertex<T, K> vertexOne, Vertex<T, K> vertexTwo) {
+        this.setStartVertex(vertexOne);
+        this.setStartVertex(vertexTwo);
+    }
 
     public boolean isDirection() {
         return direction;
@@ -15,17 +19,18 @@ public class Edge<T> {
         this.direction = direction;
     }
 
-    public Vertex<T> getStartVertex() {
+    public Vertex<T, K> getStartVertex() {
         return startVertex;
     }
-    public void setStartVertex(Vertex<T> startVertex) {
+    public void setStartVertex(Vertex<T, K> startVertex) {
         this.startVertex = startVertex;
     }
 
-    public Vertex<T> getEndVertex() {
+    public Vertex<T, K> getEndVertex() {
         return endVertex;
     }
-    public void setEndVertex(Vertex<T> endVertex) {
+    public void setEndVertex(Vertex<T, K> endVertex) {
         this.endVertex = endVertex;
     }
+
 }
