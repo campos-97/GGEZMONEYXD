@@ -1,4 +1,8 @@
 package DataStructures.TetoGraph;
 
-public class TetoGraph {
+import java.util.List;
+
+public class TetoGraph<T> {
+    List<Vertex<T>> vertexList;
+    List<Edges<T>> edgesList;
 }

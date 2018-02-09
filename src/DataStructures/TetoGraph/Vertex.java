@@ -1,4 +1,10 @@
 package DataStructures.TetoGraph;
 
-public class Vertex {
+
+import java.util.List;
+
+public class Vertex<T> {
+    T data;
+    List<Vertex<T>> adjacentVertices;
+    List<Edge<T>> adjacentEdges;
 }
