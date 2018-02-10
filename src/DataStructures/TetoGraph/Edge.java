@@ -1,6 +1,6 @@
 package DataStructures.TetoGraph;
 
-public class Edge<T, K extends Comparable> {
+public class Edge<T extends Comparable, K extends Comparable> {
 
     boolean direction;
     K weight;
@@ -9,7 +9,7 @@ public class Edge<T, K extends Comparable> {
 
     Edge(boolean direction, Vertex<T, K> vertexOne, Vertex<T, K> vertexTwo, K weight) {
         this.setStartVertex(vertexOne);
-        this.setStartVertex(vertexTwo);
+        this.setEndVertex(vertexTwo);
         this.setWeight(weight);
     }
 

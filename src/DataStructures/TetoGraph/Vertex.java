@@ -3,7 +3,7 @@ package DataStructures.TetoGraph;
 
 import java.util.List;
 
-public class Vertex<T, K extends Comparable> {
+public class Vertex<T extends Comparable, K extends Comparable> {
 
     int id;
     T data;

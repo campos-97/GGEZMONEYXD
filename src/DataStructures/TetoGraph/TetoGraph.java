@@ -3,13 +3,18 @@ package DataStructures.TetoGraph;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TetoGraph<T, K extends Comparable> {
+public class TetoGraph<T extends Comparable, K extends Comparable> {
 
     int size = 0;
     List<Vertex<T, K>> vertexList;
     List<Edge<T, K>> edgesList;
 
-    public Vertex<T, K> getVertex(int vertexID){
+    TetoGraph(){
+        vertexList = new LinkedList<>();
+        edgesList = new LinkedList<>();
+    }
+
+    public Vertex<T, K> getVertexWithId(int vertexID){
         for(Vertex<T, K> currentVertex : vertexList){
             if(currentVertex.getId() == vertexID){
                 return currentVertex;
@@ -17,29 +22,38 @@ public class TetoGraph<T, K extends Comparable> {
         }
         return null;
     }
+    public Vertex<T, K> getVertexWithData(T data){
+        for(Vertex<T, K> vertex : vertexList){
+            if(vertex.getData().compareTo(data) == 0){
+                return vertex;
+            }
+        }
+        return null;
+    }
 
-    public void setVertex(Vertex<T, K> newVertex, int[] verticesIDs, K[] weights){
+    private void setVertex(Vertex<T, K> newVertex, int[] verticesIDs, K[] weights){
         List<Vertex<T, K>> vertices = new LinkedList<Vertex<T, K>>();
         List<Edge<T, K>> edges = new LinkedList<Edge<T, K>>();
         int i = 0;
-        for(int id : verticesIDs){
-            Vertex<T, K> v = getVertex(id);
-            if(v != null){
-                K weight = null;
-                vertices.add(v);
-                if(i < weights.length){
-                    weight = weights[i++];
+        if(verticesIDs != null){
+            for(int id : verticesIDs){
+                Vertex<T, K> v = getVertexWithId(id);
+                if(v != null){
+                    K weight = null;
+                    vertices.add(v);
+                    if(i < weights.length){
+                        weight = weights[i++];
+                    }
+                    Edge<T, K> e = new Edge<T, K>(false, newVertex, v, weight);
+                    edges.add(e);
+                    v.addAdjacentVertex(newVertex);
+                    v.addAdjacentEdge(e);
+                    edgesList.add(e);
                 }
-                Edge<T, K> e = new Edge<T, K>(false, newVertex, v, weight);
-                edges.add(e);
-                v.addAdjacentVertex(newVertex);
-                v.addAdjacentEdge(e);
-                edgesList.add(e);
             }
+        }
         newVertex.setAdjacentEdges(edges);
         newVertex.setAdjacentVertices(vertices);
-        }
-
     }
 
     public void addVertex(T data, int[] verticesIDs, K[] weights){
@@ -48,6 +62,21 @@ public class TetoGraph<T, K extends Comparable> {
         setVertex(newVertex, verticesIDs, weights);
         vertexList.add(newVertex);
 
+    }
+
+    public int[] getIDs(T[] dataArray){
+        int[] ids = new int[dataArray.length];
+        int i = 0;
+        for(T data : dataArray){
+            Vertex<T, K> v = getVertexWithData(data);
+            if(v != null){
+                ids[i++] = v.getId();
+            }
+            else{
+                ids[i++] = -1;
+            }
+        }
+        return ids;
     }
 
     private void addVertexAuxiliar(Vertex<T, K> newVertex){
