@@ -15,6 +15,14 @@ public class Vertex<T, K extends Comparable> {
         this.setAdjacentVertices(adjacentVertices);
     }
 
+    public void addAdjacentVertex(Vertex<T, K> newVertex){
+        adjacentVertices.add(newVertex);
+    }
+
+    public void addAdjacentEdge(Edge<T, K> newEdge){
+        adjacentEdges.add(newEdge);
+    }
+
     public int getId() {
         return id;
     }

@@ -33,12 +33,13 @@ public class Main {
             String[] round;
             try {
                 driver.navigate().refresh();
-                sleep(1000);
+                sleep(5000);
                 round = DoubleGame.getNumberInfo(driver);
                 int num = Integer.parseInt(round[2]);
                 Node node = DoubleGame.newNumber(round);
                 graph.addNode(node);
-                nodes.add(DoubleGame.newNumber(round));
+                nodes.add(node);
+                node.printNode();
                 if(num == 0){
                     colors[2] += 1;
                 }
@@ -51,9 +52,9 @@ public class Main {
                 System.out.println("Green: " + "\n" + colors[2] + "\n"  + Percentage.getPercentage(colors, 2) + "%\n"
                         + "Red: " + "\n" + colors[0] + "\n"  + Percentage.getPercentage(colors, 0) + "%\n"
                         + "Black: " + "\n" + colors[1] + "\n"  + Percentage.getPercentage(colors, 1) + "%\n");
-                sleep(50000 - 5000*a);
+                sleep(47000 - 5000*a);
                 a = 0;
-                node.printNode();
+
             } catch (Exception e) {
                 sleep(5000);
                 a += 1;

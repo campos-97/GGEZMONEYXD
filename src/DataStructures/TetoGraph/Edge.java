@@ -7,9 +7,17 @@ public class Edge<T, K extends Comparable> {
     Vertex<T, K> startVertex;
     Vertex<T, K> endVertex;
 
-    Edge(boolean direction, Vertex<T, K> vertexOne, Vertex<T, K> vertexTwo) {
+    Edge(boolean direction, Vertex<T, K> vertexOne, Vertex<T, K> vertexTwo, K weight) {
         this.setStartVertex(vertexOne);
         this.setStartVertex(vertexTwo);
+        this.setWeight(weight);
+    }
+
+    public K getWeight() {
+        return weight;
+    }
+    public void setWeight(K weight) {
+        this.weight = weight;
     }
 
     public boolean isDirection() {
