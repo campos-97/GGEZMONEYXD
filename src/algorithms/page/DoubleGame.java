@@ -43,13 +43,13 @@ public class DoubleGame {
 
     private static String color(int number){
         if(number == 0){
-            return "green";
+            return "Green";
         }
         else if(number < 8){
-            return "red";
+            return "Red";
         }
         else{
-            return "black";
+            return "Black";
         }
     }
 

@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eynewz/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="986">
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleGame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DoubleGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithms/page/DoubleGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="799">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/DataStructures/Graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/algorithms/Date.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/Graphs/Node.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/page/DoubleGame.java" />
         <option value="$PROJECT_DIR$/src/eynewz/Main.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/page/DoubleGame.java" />
       </list>
     </option>
   </component>
@@ -343,12 +343,12 @@
       <workItem from="1518191135298" duration="13555000" />
       <workItem from="1518227367220" duration="1797000" />
       <workItem from="1518244416639" duration="1567000" />
-      <workItem from="1518274940300" duration="7078000" />
+      <workItem from="1518274940300" duration="7170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42363000" />
+    <option name="totallyTimeSpent" value="42455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -810,16 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/page/DoubleGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eynewz/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -827,6 +817,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#996#1002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/page/DoubleGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
