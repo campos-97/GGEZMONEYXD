@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GGEZMONEYXD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GGEZMONEYXD_jar</output-path>
+    <root id="archive" name="GGEZMONEYXD.jar">
+      <element id="module-output" name="GGEZMONEYXD" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jsoup-1.11.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/selenium-server-standalone-3.9.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -160,19 +160,19 @@ public class Main2 extends Application {
         for (int i = 0; i < 20; i++) { //-- add 20 numbers to the plot+
             if (dataQ1.isEmpty()) break;
             series1.getData().add(new XYChart.Data<>(xSeriesData++, dataQ1.remove()));
-            series2.getData().add(new XYChart.Data<>(xSeriesData++, dataQ2.remove()));
-            series3.getData().add(new XYChart.Data<>(xSeriesData++, dataQ3.remove()));
+            //series2.getData().add(new XYChart.Data<>(xSeriesData++, dataQ2.remove()));
+            //series3.getData().add(new XYChart.Data<>(xSeriesData++, dataQ3.remove()));
         }
         // remove points to keep us at no more than MAX_DATA_POINTS
         if (series1.getData().size() > MAX_DATA_POINTS) {
             series1.getData().remove(0, series1.getData().size() - MAX_DATA_POINTS);
         }
-        if (series2.getData().size() > MAX_DATA_POINTS) {
+        /*if (series2.getData().size() > MAX_DATA_POINTS) {
             series2.getData().remove(0, series2.getData().size() - MAX_DATA_POINTS);
         }
         if (series3.getData().size() > MAX_DATA_POINTS) {
             series3.getData().remove(0, series3.getData().size() - MAX_DATA_POINTS);
-        }
+        }*/
         // update
         xAxis.setLowerBound(xSeriesData - MAX_DATA_POINTS);
         xAxis.setUpperBound(xSeriesData - 1);
