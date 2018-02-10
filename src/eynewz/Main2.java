@@ -45,10 +45,10 @@ public class Main2 extends Application {
 
     private void init(Stage primaryStage) {
 
-        xAxis = new NumberAxis(0, MAX_DATA_POINTS, MAX_DATA_POINTS / 10);
+        xAxis = new NumberAxis(0, 100, 10);
         xAxis.setForceZeroInRange(false);
-        xAxis.setAutoRanging(false);
-        xAxis.setTickLabelsVisible(false);
+        xAxis.setAutoRanging(true);
+        xAxis.setTickLabelsVisible(true);
         xAxis.setTickMarkVisible(false);
         xAxis.setMinorTickVisible(false);
 
@@ -130,8 +130,8 @@ public class Main2 extends Application {
                 dataQ1.add(num);
                 //dataQ2.add(Math.random());
                 //dataQ3.add(Math.random());
-
-                Thread.sleep(47000 - 5000*a);
+                //Thread.sleep(100);
+                Thread.sleep(42500 - 5000*a);
                 executor.execute(this);
             } catch (Exception ex) {
                 try {
