@@ -10,7 +10,7 @@ public class TetoGraph<T, K extends Comparable> {
     List<Edge<T, K>> edgesList;
 
     public Vertex<T, K> getVertex(int vertexID){
-        for(Vertex<T> currentVertex : vertexList){
+        for(Vertex<T, K> currentVertex : vertexList){
             if(currentVertex.getId() == vertexID){
                 return currentVertex;
             }
@@ -26,8 +26,8 @@ public class TetoGraph<T, K extends Comparable> {
             if(v != null){
                 vertices.add(v);
                 Edge<T, K> e = new Edge<T, K>(false, newVertex, v);
-                v.addAdjacentVertex(newVertex);
-                v.addAdjacentEdge(e);
+                //v.addAdjacentVertex(newVertex);
+                //v.addAdjacentEdge(e);
                 edgesList.add(e);
             }
         newVertex.setAdjacentEdges(edges);

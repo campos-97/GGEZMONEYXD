@@ -40,7 +40,7 @@ public class Graph {
         System.out.println(str);
     }
 
-    public void addNode(String newRoundHash, String newHashSalt, String newRoundNumber,
+    public void addNode(String newRoundHash, String newHashSalt, double newRoundNumber,
                                String newGame, String newDate, String newTime, String newColor, int newNumber){
         Node newNode = new Node(newRoundHash, newHashSalt, newRoundNumber, newGame, newDate, newTime,
                 newColor, newNumber);
