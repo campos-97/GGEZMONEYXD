@@ -23,6 +23,33 @@ public class Vertex<T extends Comparable, K extends Comparable> {
         adjacentEdges.add(newEdge);
     }
 
+    public Edge<T, K> getEdge(Vertex<T, K> neighbour){
+        if(neighbour.getId() > this.getId()){
+            for(Edge<T, K> edge : adjacentEdges){
+                if(edge.getEndVertex() == neighbour){
+                    return edge;
+                }
+            }
+        }
+        else{
+            for(Edge<T, K> edge : adjacentEdges){
+                if(edge.getEndVertex() == neighbour){
+                    return edge;
+                }
+            }
+        }
+        return null;
+    }
+
+    public Vertex<T, K> getNeighbour(Edge<T, K> edge){
+        if(edge.getEndVertex() == this){
+            return edge.getStartVertex();
+        }
+        else{
+            return edge.getEndVertex();
+        }
+    }
+
     public int getId() {
         return id;
     }

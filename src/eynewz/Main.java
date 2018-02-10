@@ -3,14 +3,10 @@ package eynewz;
 import DataStructures.Graphs.Graph;
 import DataStructures.Graphs.Node;
 import algorithms.math.Percentage;
+import algorithms.page.Chrome;
 import algorithms.page.DoubleGame;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,11 +16,9 @@ import static java.lang.Thread.sleep;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = Chrome.getDriver("https://csgofast.com/#history/double/all");
         Graph graph = new Graph();
-        String baseUrl = "https://csgofast.com/#history/double/all";
-        driver.get(baseUrl);
+
         int[] colors = new int[3];
         int a = 0;
         List<Node> nodes = new LinkedList<Node>();
