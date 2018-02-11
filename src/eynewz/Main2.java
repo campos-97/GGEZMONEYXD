@@ -157,7 +157,7 @@ public class Main2 extends Application {
     }
 
     private void addDataToSeries() {
-        for (int i = 0; i < 20; i++) { //-- add 20 numbers to the plot+
+        for (int i = 0; i < 2000; i++) { //-- add 20 numbers to the plot+
             if (dataQ1.isEmpty()) break;
             series1.getData().add(new XYChart.Data<>(xSeriesData++, dataQ1.remove()));
             //series2.getData().add(new XYChart.Data<>(xSeriesData++, dataQ2.remove()));
